@@ -1,0 +1,103 @@
+import { createTheme } from '@mui/material/styles';
+import { grey, deepOrange } from '@mui/material/colors';
+
+export const theme = createTheme({
+  cssVariables: { colorSchemeSelector: 'class' },
+
+  colorSchemes: {
+    light: {
+      palette: {
+        primary: { main: '#21869c' },
+        secondary: { main: '#009688' },
+        background: { default: grey[50], paper: '#fff' },
+      },
+    },
+    dark: {
+      palette: {
+        primary: { main: '#21869c' },
+        secondary: { main: '#26a69a' },
+        error: { main: deepOrange[400] },
+        background: { default: '#0f1115', paper: '#141821' },
+        text: { primary: grey[100], secondary: grey[400] },
+        divider: 'rgba(255,255,255,0.12)',
+      },
+    },
+  },
+
+  shape: { borderRadius: 12, borderWidth: '2px' },
+  spacing: 10,
+
+  // ← components はトップレベルに一度だけ書く
+  // components: {
+  //   MuiCard: {
+  //     styleOverrides: {
+  //       root: ({ theme }) => ({
+  //         padding: 10,
+  //         margin: '10px 0',
+
+  //         // 色は CSS 変数経由で（モードで自動切替）
+  //         border: `1px solid ${theme.vars.palette.primary.main}`,
+  //         backgroundColor: theme.vars.palette.background.paper,
+
+  //         transition: 'filter 0.2s',
+  //         '&:hover': {
+  //           filter: 'drop-shadow(0 0 5px rgba(33, 134, 156, 0.4))',
+  //         },
+
+  //         // もしダーク時だけ太さ/効果を変えたい等はここでスコープ
+  //         [theme.getColorSchemeSelector('dark')]: {
+  //           // 例: ダーク時はホバーを少し強める
+  //           '&:hover': {
+  //             filter: 'drop-shadow(0 0 6px rgba(33, 134, 156, 0.7))',
+  //           },
+  //         },
+  //       }),
+  //     },
+  //   },
+  //   MuiContainer: {
+  //     styleOverrides: {
+  //       root: ({ theme }) => ({
+  //         padding: 10,
+  //         margin: '10px 0',
+
+  //         // 色は CSS 変数経由で（モードで自動切替）
+  //         border: `1px solid ${theme.vars.palette.primary.main}`,
+  //         backgroundColor: theme.vars.palette.background.paper,
+
+  //         transition: 'filter 0.2s',
+  //         '&:hover': {
+  //           filter: 'drop-shadow(0 0 5px rgba(33, 134, 156, 0.4))',
+  //         },
+
+  //         // もしダーク時だけ太さ/効果を変えたい等はここでスコープ
+  //         [theme.getColorSchemeSelector('dark')]: {
+  //           // 例: ダーク時はホバーを少し強める
+  //           '&:hover': {
+  //             filter: 'drop-shadow(0 0 6px rgba(33, 134, 156, 0.7))',
+  //           },
+  //         },
+  //       }),
+  //     },
+  //   },
+  // },
+
+  // typography: {
+  //   fontFamily: [
+  //     '-apple-system',
+  //     'BlinkMacSystemFont',
+  //     '"Segoe UI"',
+  //     'Roboto',
+  //     '"Helvetica Neue"',
+  //     'Arial',
+  //     'sans-serif',
+  //     '"Apple Color Emoji"',
+  //     '"Segoe UI Emoji"',
+  //     '"Segoe UI Symbol"',
+  //   ].join(','),
+  // },
+});
+
+console.log('theme');
+console.log(theme);
+const json = JSON.stringify(theme);
+console.log(json);

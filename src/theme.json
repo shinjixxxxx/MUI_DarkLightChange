@@ -1,0 +1,1254 @@
+{
+  "defaultColorScheme": "light",
+  "breakpoints": {
+    "keys": ["xs", "sm", "md", "lg", "xl"],
+    "values": { "xs": 0, "sm": 600, "md": 900, "lg": 1200, "xl": 1536 },
+    "unit": "px"
+  },
+  "direction": "ltr",
+  "components": {},
+  "shape": { "borderRadius": 12, "borderWidth": "2px" },
+  "unstable_sxConfig": {
+    "border": { "themeKey": "borders" },
+    "borderTop": { "themeKey": "borders" },
+    "borderRight": { "themeKey": "borders" },
+    "borderBottom": { "themeKey": "borders" },
+    "borderLeft": { "themeKey": "borders" },
+    "borderColor": { "themeKey": "palette" },
+    "borderTopColor": { "themeKey": "palette" },
+    "borderRightColor": { "themeKey": "palette" },
+    "borderBottomColor": { "themeKey": "palette" },
+    "borderLeftColor": { "themeKey": "palette" },
+    "outline": { "themeKey": "borders" },
+    "outlineColor": { "themeKey": "palette" },
+    "borderRadius": { "themeKey": "shape.borderRadius" },
+    "color": { "themeKey": "palette" },
+    "bgcolor": { "themeKey": "palette", "cssProperty": "backgroundColor" },
+    "backgroundColor": { "themeKey": "palette" },
+    "p": {},
+    "pt": {},
+    "pr": {},
+    "pb": {},
+    "pl": {},
+    "px": {},
+    "py": {},
+    "padding": {},
+    "paddingTop": {},
+    "paddingRight": {},
+    "paddingBottom": {},
+    "paddingLeft": {},
+    "paddingX": {},
+    "paddingY": {},
+    "paddingInline": {},
+    "paddingInlineStart": {},
+    "paddingInlineEnd": {},
+    "paddingBlock": {},
+    "paddingBlockStart": {},
+    "paddingBlockEnd": {},
+    "m": {},
+    "mt": {},
+    "mr": {},
+    "mb": {},
+    "ml": {},
+    "mx": {},
+    "my": {},
+    "margin": {},
+    "marginTop": {},
+    "marginRight": {},
+    "marginBottom": {},
+    "marginLeft": {},
+    "marginX": {},
+    "marginY": {},
+    "marginInline": {},
+    "marginInlineStart": {},
+    "marginInlineEnd": {},
+    "marginBlock": {},
+    "marginBlockStart": {},
+    "marginBlockEnd": {},
+    "displayPrint": { "cssProperty": false },
+    "display": {},
+    "overflow": {},
+    "textOverflow": {},
+    "visibility": {},
+    "whiteSpace": {},
+    "flexBasis": {},
+    "flexDirection": {},
+    "flexWrap": {},
+    "justifyContent": {},
+    "alignItems": {},
+    "alignContent": {},
+    "order": {},
+    "flex": {},
+    "flexGrow": {},
+    "flexShrink": {},
+    "alignSelf": {},
+    "justifyItems": {},
+    "justifySelf": {},
+    "gap": {},
+    "rowGap": {},
+    "columnGap": {},
+    "gridColumn": {},
+    "gridRow": {},
+    "gridAutoFlow": {},
+    "gridAutoColumns": {},
+    "gridAutoRows": {},
+    "gridTemplateColumns": {},
+    "gridTemplateRows": {},
+    "gridTemplateAreas": {},
+    "gridArea": {},
+    "position": {},
+    "zIndex": { "themeKey": "zIndex" },
+    "top": {},
+    "right": {},
+    "bottom": {},
+    "left": {},
+    "boxShadow": { "themeKey": "shadows" },
+    "width": {},
+    "maxWidth": {},
+    "minWidth": {},
+    "height": {},
+    "maxHeight": {},
+    "minHeight": {},
+    "boxSizing": {},
+    "font": { "themeKey": "font" },
+    "fontFamily": { "themeKey": "typography" },
+    "fontSize": { "themeKey": "typography" },
+    "fontStyle": { "themeKey": "typography" },
+    "fontWeight": { "themeKey": "typography" },
+    "letterSpacing": {},
+    "textTransform": {},
+    "lineHeight": {},
+    "textAlign": {},
+    "typography": { "cssProperty": false, "themeKey": "typography" }
+  },
+  "mixins": {
+    "toolbar": {
+      "minHeight": 56,
+      "@media (min-width:0px)": {
+        "@media (orientation: landscape)": { "minHeight": 48 }
+      },
+      "@media (min-width:600px)": { "minHeight": 64 }
+    }
+  },
+  "shadows": [
+    "none",
+    "0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)",
+    "0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12)",
+    "0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12)",
+    "0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)",
+    "0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12)",
+    "0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12)",
+    "0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12)",
+    "0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12)",
+    "0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12)",
+    "0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12)",
+    "0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12)",
+    "0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12)",
+    "0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12)",
+    "0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12)",
+    "0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12)",
+    "0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12)",
+    "0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12)",
+    "0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12)",
+    "0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12)",
+    "0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12)",
+    "0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12)",
+    "0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12)",
+    "0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12)",
+    "0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12)"
+  ],
+  "typography": {
+    "htmlFontSize": 16,
+    "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+    "fontSize": 14,
+    "fontWeightLight": 300,
+    "fontWeightRegular": 400,
+    "fontWeightMedium": 500,
+    "fontWeightBold": 700,
+    "h1": {
+      "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+      "fontWeight": 300,
+      "fontSize": "6rem",
+      "lineHeight": 1.167,
+      "letterSpacing": "-0.01562em"
+    },
+    "h2": {
+      "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+      "fontWeight": 300,
+      "fontSize": "3.75rem",
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.00833em"
+    },
+    "h3": {
+      "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+      "fontWeight": 400,
+      "fontSize": "3rem",
+      "lineHeight": 1.167,
+      "letterSpacing": "0em"
+    },
+    "h4": {
+      "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+      "fontWeight": 400,
+      "fontSize": "2.125rem",
+      "lineHeight": 1.235,
+      "letterSpacing": "0.00735em"
+    },
+    "h5": {
+      "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+      "fontWeight": 400,
+      "fontSize": "1.5rem",
+      "lineHeight": 1.334,
+      "letterSpacing": "0em"
+    },
+    "h6": {
+      "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+      "fontWeight": 500,
+      "fontSize": "1.25rem",
+      "lineHeight": 1.6,
+      "letterSpacing": "0.0075em"
+    },
+    "subtitle1": {
+      "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+      "fontWeight": 400,
+      "fontSize": "1rem",
+      "lineHeight": 1.75,
+      "letterSpacing": "0.00938em"
+    },
+    "subtitle2": {
+      "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+      "fontWeight": 500,
+      "fontSize": "0.875rem",
+      "lineHeight": 1.57,
+      "letterSpacing": "0.00714em"
+    },
+    "body1": {
+      "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+      "fontWeight": 400,
+      "fontSize": "1rem",
+      "lineHeight": 1.5,
+      "letterSpacing": "0.00938em"
+    },
+    "body2": {
+      "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+      "fontWeight": 400,
+      "fontSize": "0.875rem",
+      "lineHeight": 1.43,
+      "letterSpacing": "0.01071em"
+    },
+    "button": {
+      "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+      "fontWeight": 500,
+      "fontSize": "0.875rem",
+      "lineHeight": 1.75,
+      "letterSpacing": "0.02857em",
+      "textTransform": "uppercase"
+    },
+    "caption": {
+      "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+      "fontWeight": 400,
+      "fontSize": "0.75rem",
+      "lineHeight": 1.66,
+      "letterSpacing": "0.03333em"
+    },
+    "overline": {
+      "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+      "fontWeight": 400,
+      "fontSize": "0.75rem",
+      "lineHeight": 2.66,
+      "letterSpacing": "0.08333em",
+      "textTransform": "uppercase"
+    },
+    "inherit": {
+      "fontFamily": "inherit",
+      "fontWeight": "inherit",
+      "fontSize": "inherit",
+      "lineHeight": "inherit",
+      "letterSpacing": "inherit"
+    }
+  },
+  "transitions": {
+    "easing": {
+      "easeInOut": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "easeOut": "cubic-bezier(0.0, 0, 0.2, 1)",
+      "easeIn": "cubic-bezier(0.4, 0, 1, 1)",
+      "sharp": "cubic-bezier(0.4, 0, 0.6, 1)"
+    },
+    "duration": {
+      "shortest": 150,
+      "shorter": 200,
+      "short": 250,
+      "standard": 300,
+      "complex": 375,
+      "enteringScreen": 225,
+      "leavingScreen": 195
+    }
+  },
+  "zIndex": {
+    "mobileStepper": 1000,
+    "fab": 1050,
+    "speedDial": 1050,
+    "appBar": 1100,
+    "drawer": 1200,
+    "modal": 1300,
+    "snackbar": 1400,
+    "tooltip": 1500
+  },
+  "cssVarPrefix": "mui",
+  "colorSchemeSelector": "class",
+  "rootSelector": ":root",
+  "colorSchemes": {
+    "light": {
+      "palette": {
+        "mode": "light",
+        "primary": {
+          "main": "#21869c",
+          "light": "rgb(77, 158, 175)",
+          "dark": "rgb(23, 93, 109)",
+          "contrastText": "#fff",
+          "mainChannel": "33 134 156",
+          "lightChannel": "77 158 175",
+          "darkChannel": "23 93 109",
+          "contrastTextChannel": "255 255 255"
+        },
+        "secondary": {
+          "main": "#009688",
+          "light": "rgb(51, 171, 159)",
+          "dark": "rgb(0, 105, 95)",
+          "contrastText": "#fff",
+          "mainChannel": "0 150 136",
+          "lightChannel": "51 171 159",
+          "darkChannel": "0 105 95",
+          "contrastTextChannel": "255 255 255"
+        },
+        "background": {
+          "default": "#fafafa",
+          "paper": "#fff",
+          "defaultChannel": "250 250 250",
+          "paperChannel": "255 255 255"
+        },
+        "common": {
+          "black": "#000",
+          "white": "#fff",
+          "background": "#fff",
+          "onBackground": "#000",
+          "backgroundChannel": "255 255 255",
+          "onBackgroundChannel": "0 0 0"
+        },
+        "error": {
+          "main": "#d32f2f",
+          "light": "#ef5350",
+          "dark": "#c62828",
+          "contrastText": "#fff",
+          "mainChannel": "211 47 47",
+          "lightChannel": "239 83 80",
+          "darkChannel": "198 40 40",
+          "contrastTextChannel": "255 255 255"
+        },
+        "warning": {
+          "main": "#ed6c02",
+          "light": "#ff9800",
+          "dark": "#e65100",
+          "contrastText": "#fff",
+          "mainChannel": "237 108 2",
+          "lightChannel": "255 152 0",
+          "darkChannel": "230 81 0",
+          "contrastTextChannel": "255 255 255"
+        },
+        "info": {
+          "main": "#0288d1",
+          "light": "#03a9f4",
+          "dark": "#01579b",
+          "contrastText": "#fff",
+          "mainChannel": "2 136 209",
+          "lightChannel": "3 169 244",
+          "darkChannel": "1 87 155",
+          "contrastTextChannel": "255 255 255"
+        },
+        "success": {
+          "main": "#2e7d32",
+          "light": "#4caf50",
+          "dark": "#1b5e20",
+          "contrastText": "#fff",
+          "mainChannel": "46 125 50",
+          "lightChannel": "76 175 80",
+          "darkChannel": "27 94 32",
+          "contrastTextChannel": "255 255 255"
+        },
+        "grey": {
+          "50": "#fafafa",
+          "100": "#f5f5f5",
+          "200": "#eeeeee",
+          "300": "#e0e0e0",
+          "400": "#bdbdbd",
+          "500": "#9e9e9e",
+          "600": "#757575",
+          "700": "#616161",
+          "800": "#424242",
+          "900": "#212121",
+          "A100": "#f5f5f5",
+          "A200": "#eeeeee",
+          "A400": "#bdbdbd",
+          "A700": "#616161"
+        },
+        "contrastThreshold": 3,
+        "tonalOffset": 0.2,
+        "text": {
+          "primary": "rgba(0, 0, 0, 0.87)",
+          "secondary": "rgba(0, 0, 0, 0.6)",
+          "disabled": "rgba(0, 0, 0, 0.38)",
+          "primaryChannel": "0 0 0",
+          "secondaryChannel": "0 0 0"
+        },
+        "divider": "rgba(0, 0, 0, 0.12)",
+        "action": {
+          "active": "rgba(0, 0, 0, 0.54)",
+          "hover": "rgba(0, 0, 0, 0.04)",
+          "hoverOpacity": 0.04,
+          "selected": "rgba(0, 0, 0, 0.08)",
+          "selectedOpacity": 0.08,
+          "disabled": "rgba(0, 0, 0, 0.26)",
+          "disabledBackground": "rgba(0, 0, 0, 0.12)",
+          "disabledOpacity": 0.38,
+          "focus": "rgba(0, 0, 0, 0.12)",
+          "focusOpacity": 0.12,
+          "activatedOpacity": 0.12,
+          "activeChannel": "0 0 0",
+          "selectedChannel": "0 0 0"
+        },
+        "Alert": {
+          "errorColor": "rgb(95, 33, 32)",
+          "infoColor": "rgb(1, 67, 97)",
+          "successColor": "rgb(30, 70, 32)",
+          "warningColor": "rgb(102, 60, 0)",
+          "errorFilledBg": "var(--mui-palette-error-main, #d32f2f)",
+          "infoFilledBg": "var(--mui-palette-info-main, #0288d1)",
+          "successFilledBg": "var(--mui-palette-success-main, #2e7d32)",
+          "warningFilledBg": "var(--mui-palette-warning-main, #ed6c02)",
+          "errorFilledColor": "#fff",
+          "infoFilledColor": "#fff",
+          "successFilledColor": "#fff",
+          "warningFilledColor": "#fff",
+          "errorStandardBg": "rgb(253, 237, 237)",
+          "infoStandardBg": "rgb(229, 246, 253)",
+          "successStandardBg": "rgb(237, 247, 237)",
+          "warningStandardBg": "rgb(255, 244, 229)",
+          "errorIconColor": "var(--mui-palette-error-main, #d32f2f)",
+          "infoIconColor": "var(--mui-palette-info-main, #0288d1)",
+          "successIconColor": "var(--mui-palette-success-main, #2e7d32)",
+          "warningIconColor": "var(--mui-palette-warning-main, #ed6c02)"
+        },
+        "AppBar": { "defaultBg": "var(--mui-palette-grey-100, #f5f5f5)" },
+        "Avatar": { "defaultBg": "var(--mui-palette-grey-400, #bdbdbd)" },
+        "Button": {
+          "inheritContainedBg": "var(--mui-palette-grey-300, #e0e0e0)",
+          "inheritContainedHoverBg": "var(--mui-palette-grey-A100, #f5f5f5)"
+        },
+        "Chip": {
+          "defaultBorder": "var(--mui-palette-grey-400, #bdbdbd)",
+          "defaultAvatarColor": "var(--mui-palette-grey-700, #616161)",
+          "defaultIconColor": "var(--mui-palette-grey-700, #616161)"
+        },
+        "FilledInput": {
+          "bg": "rgba(0, 0, 0, 0.06)",
+          "hoverBg": "rgba(0, 0, 0, 0.09)",
+          "disabledBg": "rgba(0, 0, 0, 0.12)"
+        },
+        "LinearProgress": {
+          "primaryBg": "rgb(170, 209, 217)",
+          "secondaryBg": "rgb(158, 215, 209)",
+          "errorBg": "rgb(238, 175, 175)",
+          "infoBg": "rgb(158, 209, 237)",
+          "successBg": "rgb(175, 205, 177)",
+          "warningBg": "rgb(248, 199, 158)"
+        },
+        "Skeleton": {
+          "bg": "rgba(var(--mui-palette-text-primaryChannel, undefined) / 0.11)"
+        },
+        "Slider": {
+          "primaryTrack": "rgb(170, 209, 217)",
+          "secondaryTrack": "rgb(158, 215, 209)",
+          "errorTrack": "rgb(238, 175, 175)",
+          "infoTrack": "rgb(158, 209, 237)",
+          "successTrack": "rgb(175, 205, 177)",
+          "warningTrack": "rgb(248, 199, 158)"
+        },
+        "SnackbarContent": { "bg": "rgb(49, 49, 49)", "color": "#fff" },
+        "SpeedDialAction": { "fabHoverBg": "rgb(216, 216, 216)" },
+        "StepConnector": { "border": "var(--mui-palette-grey-400, #bdbdbd)" },
+        "StepContent": { "border": "var(--mui-palette-grey-400, #bdbdbd)" },
+        "Switch": {
+          "defaultColor": "var(--mui-palette-common-white, #fff)",
+          "defaultDisabledColor": "var(--mui-palette-grey-100, #f5f5f5)",
+          "primaryDisabledColor": "rgb(170, 209, 217)",
+          "secondaryDisabledColor": "rgb(158, 215, 209)",
+          "errorDisabledColor": "rgb(238, 175, 175)",
+          "infoDisabledColor": "rgb(158, 209, 237)",
+          "successDisabledColor": "rgb(175, 205, 177)",
+          "warningDisabledColor": "rgb(248, 199, 158)"
+        },
+        "TableCell": { "border": "rgba(224, 224, 224, 1)" },
+        "Tooltip": { "bg": "rgba(97, 97, 97, 0.92)" },
+        "dividerChannel": "0 0 0"
+      },
+      "opacity": {
+        "inputPlaceholder": 0.42,
+        "inputUnderline": 0.42,
+        "switchTrackDisabled": 0.12,
+        "switchTrack": 0.38
+      },
+      "overlays": []
+    },
+    "dark": {
+      "palette": {
+        "common": {
+          "black": "#000",
+          "white": "#fff",
+          "background": "#000",
+          "onBackground": "#fff",
+          "backgroundChannel": "0 0 0",
+          "onBackgroundChannel": "255 255 255"
+        },
+        "mode": "dark",
+        "primary": {
+          "main": "#21869c",
+          "light": "rgb(77, 158, 175)",
+          "dark": "rgb(23, 93, 109)",
+          "contrastText": "#fff",
+          "mainChannel": "33 134 156",
+          "lightChannel": "77 158 175",
+          "darkChannel": "23 93 109",
+          "contrastTextChannel": "255 255 255"
+        },
+        "secondary": {
+          "main": "#26a69a",
+          "light": "rgb(81, 183, 174)",
+          "dark": "rgb(26, 116, 107)",
+          "contrastText": "#fff",
+          "mainChannel": "38 166 154",
+          "lightChannel": "81 183 174",
+          "darkChannel": "26 116 107",
+          "contrastTextChannel": "255 255 255"
+        },
+        "error": {
+          "main": "#ff7043",
+          "light": "rgb(255, 140, 104)",
+          "dark": "rgb(178, 78, 46)",
+          "contrastText": "rgba(0, 0, 0, 0.87)",
+          "mainChannel": "255 112 67",
+          "lightChannel": "255 140 104",
+          "darkChannel": "178 78 46",
+          "contrastTextChannel": "0 0 0"
+        },
+        "warning": {
+          "main": "#ffa726",
+          "light": "#ffb74d",
+          "dark": "#f57c00",
+          "contrastText": "rgba(0, 0, 0, 0.87)",
+          "mainChannel": "255 167 38",
+          "lightChannel": "255 183 77",
+          "darkChannel": "245 124 0",
+          "contrastTextChannel": "0 0 0"
+        },
+        "info": {
+          "main": "#29b6f6",
+          "light": "#4fc3f7",
+          "dark": "#0288d1",
+          "contrastText": "rgba(0, 0, 0, 0.87)",
+          "mainChannel": "41 182 246",
+          "lightChannel": "79 195 247",
+          "darkChannel": "2 136 209",
+          "contrastTextChannel": "0 0 0"
+        },
+        "success": {
+          "main": "#66bb6a",
+          "light": "#81c784",
+          "dark": "#388e3c",
+          "contrastText": "rgba(0, 0, 0, 0.87)",
+          "mainChannel": "102 187 106",
+          "lightChannel": "129 199 132",
+          "darkChannel": "56 142 60",
+          "contrastTextChannel": "0 0 0"
+        },
+        "grey": {
+          "50": "#fafafa",
+          "100": "#f5f5f5",
+          "200": "#eeeeee",
+          "300": "#e0e0e0",
+          "400": "#bdbdbd",
+          "500": "#9e9e9e",
+          "600": "#757575",
+          "700": "#616161",
+          "800": "#424242",
+          "900": "#212121",
+          "A100": "#f5f5f5",
+          "A200": "#eeeeee",
+          "A400": "#bdbdbd",
+          "A700": "#616161"
+        },
+        "contrastThreshold": 3,
+        "tonalOffset": 0.2,
+        "text": {
+          "primary": "#f5f5f5",
+          "secondary": "#bdbdbd",
+          "disabled": "rgba(255, 255, 255, 0.5)",
+          "icon": "rgba(255, 255, 255, 0.5)",
+          "primaryChannel": "245 245 245",
+          "secondaryChannel": "189 189 189"
+        },
+        "divider": "rgba(255,255,255,0.12)",
+        "background": {
+          "paper": "#141821",
+          "default": "#0f1115",
+          "defaultChannel": "15 17 21",
+          "paperChannel": "20 24 33"
+        },
+        "action": {
+          "active": "#fff",
+          "hover": "rgba(255, 255, 255, 0.08)",
+          "hoverOpacity": 0.08,
+          "selected": "rgba(255, 255, 255, 0.16)",
+          "selectedOpacity": 0.16,
+          "disabled": "rgba(255, 255, 255, 0.3)",
+          "disabledBackground": "rgba(255, 255, 255, 0.12)",
+          "disabledOpacity": 0.38,
+          "focus": "rgba(255, 255, 255, 0.12)",
+          "focusOpacity": 0.12,
+          "activatedOpacity": 0.24,
+          "activeChannel": "255 255 255",
+          "selectedChannel": "255 255 255"
+        },
+        "Alert": {
+          "errorColor": "rgb(255, 209, 194)",
+          "infoColor": "rgb(184, 231, 251)",
+          "successColor": "rgb(204, 232, 205)",
+          "warningColor": "rgb(255, 226, 183)",
+          "errorFilledBg": "var(--mui-palette-error-dark, rgb(178, 78, 46))",
+          "infoFilledBg": "var(--mui-palette-info-dark, #0288d1)",
+          "successFilledBg": "var(--mui-palette-success-dark, #388e3c)",
+          "warningFilledBg": "var(--mui-palette-warning-dark, #f57c00)",
+          "errorFilledColor": "#fff",
+          "infoFilledColor": "#fff",
+          "successFilledColor": "#fff",
+          "warningFilledColor": "rgba(0, 0, 0, 0.87)",
+          "errorStandardBg": "rgb(25, 13, 10)",
+          "infoStandardBg": "rgb(7, 19, 24)",
+          "successStandardBg": "rgb(12, 19, 13)",
+          "warningStandardBg": "rgb(25, 18, 7)",
+          "errorIconColor": "var(--mui-palette-error-main, #ff7043)",
+          "infoIconColor": "var(--mui-palette-info-main, #29b6f6)",
+          "successIconColor": "var(--mui-palette-success-main, #66bb6a)",
+          "warningIconColor": "var(--mui-palette-warning-main, #ffa726)"
+        },
+        "AppBar": {
+          "defaultBg": "var(--mui-palette-grey-900, #212121)",
+          "darkBg": "var(--mui-palette-background-paper, #141821)",
+          "darkColor": "var(--mui-palette-text-primary, #f5f5f5)"
+        },
+        "Avatar": { "defaultBg": "var(--mui-palette-grey-600, #757575)" },
+        "Button": {
+          "inheritContainedBg": "var(--mui-palette-grey-800, #424242)",
+          "inheritContainedHoverBg": "var(--mui-palette-grey-700, #616161)"
+        },
+        "Chip": {
+          "defaultBorder": "var(--mui-palette-grey-700, #616161)",
+          "defaultAvatarColor": "var(--mui-palette-grey-300, #e0e0e0)",
+          "defaultIconColor": "var(--mui-palette-grey-300, #e0e0e0)"
+        },
+        "FilledInput": {
+          "bg": "rgba(255, 255, 255, 0.09)",
+          "hoverBg": "rgba(255, 255, 255, 0.13)",
+          "disabledBg": "rgba(255, 255, 255, 0.12)"
+        },
+        "LinearProgress": {
+          "primaryBg": "rgb(16, 67, 78)",
+          "secondaryBg": "rgb(19, 83, 77)",
+          "errorBg": "rgb(127, 56, 33)",
+          "infoBg": "rgb(20, 91, 123)",
+          "successBg": "rgb(51, 93, 53)",
+          "warningBg": "rgb(127, 83, 19)"
+        },
+        "Skeleton": {
+          "bg": "rgba(var(--mui-palette-text-primaryChannel, undefined) / 0.13)"
+        },
+        "Slider": {
+          "primaryTrack": "rgb(16, 67, 78)",
+          "secondaryTrack": "rgb(19, 83, 77)",
+          "errorTrack": "rgb(127, 56, 33)",
+          "infoTrack": "rgb(20, 91, 123)",
+          "successTrack": "rgb(51, 93, 53)",
+          "warningTrack": "rgb(127, 83, 19)"
+        },
+        "SnackbarContent": {
+          "bg": "rgb(250, 250, 250)",
+          "color": "rgba(0, 0, 0, 0.87)"
+        },
+        "SpeedDialAction": { "fabHoverBg": "rgb(55, 58, 66)" },
+        "StepConnector": { "border": "var(--mui-palette-grey-600, #757575)" },
+        "StepContent": { "border": "var(--mui-palette-grey-600, #757575)" },
+        "Switch": {
+          "defaultColor": "var(--mui-palette-grey-300, #e0e0e0)",
+          "defaultDisabledColor": "var(--mui-palette-grey-600, #757575)",
+          "primaryDisabledColor": "rgb(14, 60, 70)",
+          "secondaryDisabledColor": "rgb(17, 74, 69)",
+          "errorDisabledColor": "rgb(114, 50, 30)",
+          "infoDisabledColor": "rgb(18, 81, 110)",
+          "successDisabledColor": "rgb(45, 84, 47)",
+          "warningDisabledColor": "rgb(114, 75, 17)"
+        },
+        "TableCell": { "border": "rgba(81, 81, 81, 1)" },
+        "Tooltip": { "bg": "rgba(97, 97, 97, 0.92)" },
+        "dividerChannel": "255 255 255"
+      },
+      "opacity": {
+        "inputPlaceholder": 0.5,
+        "inputUnderline": 0.7,
+        "switchTrackDisabled": 0.2,
+        "switchTrack": 0.3
+      },
+      "overlays": [
+        "none",
+        "linear-gradient(rgba(255 255 255 / 0.051), rgba(255 255 255 / 0.051))",
+        "linear-gradient(rgba(255 255 255 / 0.069), rgba(255 255 255 / 0.069))",
+        "linear-gradient(rgba(255 255 255 / 0.082), rgba(255 255 255 / 0.082))",
+        "linear-gradient(rgba(255 255 255 / 0.092), rgba(255 255 255 / 0.092))",
+        "linear-gradient(rgba(255 255 255 / 0.101), rgba(255 255 255 / 0.101))",
+        "linear-gradient(rgba(255 255 255 / 0.108), rgba(255 255 255 / 0.108))",
+        "linear-gradient(rgba(255 255 255 / 0.114), rgba(255 255 255 / 0.114))",
+        "linear-gradient(rgba(255 255 255 / 0.119), rgba(255 255 255 / 0.119))",
+        "linear-gradient(rgba(255 255 255 / 0.124), rgba(255 255 255 / 0.124))",
+        "linear-gradient(rgba(255 255 255 / 0.128), rgba(255 255 255 / 0.128))",
+        "linear-gradient(rgba(255 255 255 / 0.132), rgba(255 255 255 / 0.132))",
+        "linear-gradient(rgba(255 255 255 / 0.135), rgba(255 255 255 / 0.135))",
+        "linear-gradient(rgba(255 255 255 / 0.139), rgba(255 255 255 / 0.139))",
+        "linear-gradient(rgba(255 255 255 / 0.142), rgba(255 255 255 / 0.142))",
+        "linear-gradient(rgba(255 255 255 / 0.145), rgba(255 255 255 / 0.145))",
+        "linear-gradient(rgba(255 255 255 / 0.147), rgba(255 255 255 / 0.147))",
+        "linear-gradient(rgba(255 255 255 / 0.15), rgba(255 255 255 / 0.15))",
+        "linear-gradient(rgba(255 255 255 / 0.152), rgba(255 255 255 / 0.152))",
+        "linear-gradient(rgba(255 255 255 / 0.155), rgba(255 255 255 / 0.155))",
+        "linear-gradient(rgba(255 255 255 / 0.157), rgba(255 255 255 / 0.157))",
+        "linear-gradient(rgba(255 255 255 / 0.159), rgba(255 255 255 / 0.159))",
+        "linear-gradient(rgba(255 255 255 / 0.161), rgba(255 255 255 / 0.161))",
+        "linear-gradient(rgba(255 255 255 / 0.163), rgba(255 255 255 / 0.163))",
+        "linear-gradient(rgba(255 255 255 / 0.165), rgba(255 255 255 / 0.165))"
+      ]
+    }
+  },
+  "font": {
+    "h1": "300 6rem/1.167 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+    "h2": "300 3.75rem/1.2 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+    "h3": "400 3rem/1.167 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+    "h4": "400 2.125rem/1.235 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+    "h5": "400 1.5rem/1.334 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+    "h6": "500 1.25rem/1.6 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+    "subtitle1": "400 1rem/1.75 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+    "subtitle2": "500 0.875rem/1.57 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+    "body1": "400 1rem/1.5 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+    "body2": "400 0.875rem/1.43 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+    "button": "500 0.875rem/1.75 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+    "caption": "400 0.75rem/1.66 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+    "overline": "400 0.75rem/2.66 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+    "inherit": "inherit inherit/inherit inherit"
+  },
+  "vars": {
+    "spacing": "var(--mui-spacing, 10px)",
+    "shape": {
+      "borderRadius": "var(--mui-shape-borderRadius, 12px)",
+      "borderWidth": "var(--mui-shape-borderWidth, 2px)"
+    },
+    "shadows": [
+      "var(--mui-shadows-0, none)",
+      "var(--mui-shadows-1, 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-2, 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-3, 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-4, 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-5, 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-6, 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-7, 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-8, 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-9, 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-10, 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-11, 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-12, 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-13, 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-14, 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-15, 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-16, 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-17, 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-18, 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-19, 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-20, 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-21, 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-22, 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-23, 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12))",
+      "var(--mui-shadows-24, 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12))"
+    ],
+    "zIndex": {
+      "mobileStepper": "var(--mui-zIndex-mobileStepper, 1000)",
+      "fab": "var(--mui-zIndex-fab, 1050)",
+      "speedDial": "var(--mui-zIndex-speedDial, 1050)",
+      "appBar": "var(--mui-zIndex-appBar, 1100)",
+      "drawer": "var(--mui-zIndex-drawer, 1200)",
+      "modal": "var(--mui-zIndex-modal, 1300)",
+      "snackbar": "var(--mui-zIndex-snackbar, 1400)",
+      "tooltip": "var(--mui-zIndex-tooltip, 1500)"
+    },
+    "font": {
+      "h1": "var(--mui-font-h1, 300 6rem/1.167 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif)",
+      "h2": "var(--mui-font-h2, 300 3.75rem/1.2 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif)",
+      "h3": "var(--mui-font-h3, 400 3rem/1.167 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif)",
+      "h4": "var(--mui-font-h4, 400 2.125rem/1.235 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif)",
+      "h5": "var(--mui-font-h5, 400 1.5rem/1.334 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif)",
+      "h6": "var(--mui-font-h6, 500 1.25rem/1.6 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif)",
+      "subtitle1": "var(--mui-font-subtitle1, 400 1rem/1.75 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif)",
+      "subtitle2": "var(--mui-font-subtitle2, 500 0.875rem/1.57 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif)",
+      "body1": "var(--mui-font-body1, 400 1rem/1.5 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif)",
+      "body2": "var(--mui-font-body2, 400 0.875rem/1.43 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif)",
+      "button": "var(--mui-font-button, 500 0.875rem/1.75 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif)",
+      "caption": "var(--mui-font-caption, 400 0.75rem/1.66 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif)",
+      "overline": "var(--mui-font-overline, 400 0.75rem/2.66 \"Roboto\", \"Helvetica\", \"Arial\", sans-serif)",
+      "inherit": "var(--mui-font-inherit, inherit inherit/inherit inherit)"
+    },
+    "palette": {
+      "common": {
+        "black": "var(--mui-palette-common-black, #000)",
+        "white": "var(--mui-palette-common-white, #fff)",
+        "background": "var(--mui-palette-common-background, #fff)",
+        "onBackground": "var(--mui-palette-common-onBackground, #000)",
+        "backgroundChannel": "var(--mui-palette-common-backgroundChannel, 255 255 255)",
+        "onBackgroundChannel": "var(--mui-palette-common-onBackgroundChannel, 0 0 0)"
+      },
+      "primary": {
+        "main": "var(--mui-palette-primary-main, #21869c)",
+        "light": "var(--mui-palette-primary-light, rgb(77, 158, 175))",
+        "dark": "var(--mui-palette-primary-dark, rgb(23, 93, 109))",
+        "contrastText": "var(--mui-palette-primary-contrastText, #fff)",
+        "mainChannel": "var(--mui-palette-primary-mainChannel, 33 134 156)",
+        "lightChannel": "var(--mui-palette-primary-lightChannel, 77 158 175)",
+        "darkChannel": "var(--mui-palette-primary-darkChannel, 23 93 109)",
+        "contrastTextChannel": "var(--mui-palette-primary-contrastTextChannel, 255 255 255)"
+      },
+      "secondary": {
+        "main": "var(--mui-palette-secondary-main, #009688)",
+        "light": "var(--mui-palette-secondary-light, rgb(51, 171, 159))",
+        "dark": "var(--mui-palette-secondary-dark, rgb(0, 105, 95))",
+        "contrastText": "var(--mui-palette-secondary-contrastText, #fff)",
+        "mainChannel": "var(--mui-palette-secondary-mainChannel, 0 150 136)",
+        "lightChannel": "var(--mui-palette-secondary-lightChannel, 51 171 159)",
+        "darkChannel": "var(--mui-palette-secondary-darkChannel, 0 105 95)",
+        "contrastTextChannel": "var(--mui-palette-secondary-contrastTextChannel, 255 255 255)"
+      },
+      "error": {
+        "main": "var(--mui-palette-error-main, #d32f2f)",
+        "light": "var(--mui-palette-error-light, #ef5350)",
+        "dark": "var(--mui-palette-error-dark, #c62828)",
+        "contrastText": "var(--mui-palette-error-contrastText, #fff)",
+        "mainChannel": "var(--mui-palette-error-mainChannel, 211 47 47)",
+        "lightChannel": "var(--mui-palette-error-lightChannel, 239 83 80)",
+        "darkChannel": "var(--mui-palette-error-darkChannel, 198 40 40)",
+        "contrastTextChannel": "var(--mui-palette-error-contrastTextChannel, 255 255 255)"
+      },
+      "warning": {
+        "main": "var(--mui-palette-warning-main, #ed6c02)",
+        "light": "var(--mui-palette-warning-light, #ff9800)",
+        "dark": "var(--mui-palette-warning-dark, #e65100)",
+        "contrastText": "var(--mui-palette-warning-contrastText, #fff)",
+        "mainChannel": "var(--mui-palette-warning-mainChannel, 237 108 2)",
+        "lightChannel": "var(--mui-palette-warning-lightChannel, 255 152 0)",
+        "darkChannel": "var(--mui-palette-warning-darkChannel, 230 81 0)",
+        "contrastTextChannel": "var(--mui-palette-warning-contrastTextChannel, 255 255 255)"
+      },
+      "info": {
+        "main": "var(--mui-palette-info-main, #0288d1)",
+        "light": "var(--mui-palette-info-light, #03a9f4)",
+        "dark": "var(--mui-palette-info-dark, #01579b)",
+        "contrastText": "var(--mui-palette-info-contrastText, #fff)",
+        "mainChannel": "var(--mui-palette-info-mainChannel, 2 136 209)",
+        "lightChannel": "var(--mui-palette-info-lightChannel, 3 169 244)",
+        "darkChannel": "var(--mui-palette-info-darkChannel, 1 87 155)",
+        "contrastTextChannel": "var(--mui-palette-info-contrastTextChannel, 255 255 255)"
+      },
+      "success": {
+        "main": "var(--mui-palette-success-main, #2e7d32)",
+        "light": "var(--mui-palette-success-light, #4caf50)",
+        "dark": "var(--mui-palette-success-dark, #1b5e20)",
+        "contrastText": "var(--mui-palette-success-contrastText, #fff)",
+        "mainChannel": "var(--mui-palette-success-mainChannel, 46 125 50)",
+        "lightChannel": "var(--mui-palette-success-lightChannel, 76 175 80)",
+        "darkChannel": "var(--mui-palette-success-darkChannel, 27 94 32)",
+        "contrastTextChannel": "var(--mui-palette-success-contrastTextChannel, 255 255 255)"
+      },
+      "grey": {
+        "50": "var(--mui-palette-grey-50, #fafafa)",
+        "100": "var(--mui-palette-grey-100, #f5f5f5)",
+        "200": "var(--mui-palette-grey-200, #eeeeee)",
+        "300": "var(--mui-palette-grey-300, #e0e0e0)",
+        "400": "var(--mui-palette-grey-400, #bdbdbd)",
+        "500": "var(--mui-palette-grey-500, #9e9e9e)",
+        "600": "var(--mui-palette-grey-600, #757575)",
+        "700": "var(--mui-palette-grey-700, #616161)",
+        "800": "var(--mui-palette-grey-800, #424242)",
+        "900": "var(--mui-palette-grey-900, #212121)",
+        "A100": "var(--mui-palette-grey-A100, #f5f5f5)",
+        "A200": "var(--mui-palette-grey-A200, #eeeeee)",
+        "A400": "var(--mui-palette-grey-A400, #bdbdbd)",
+        "A700": "var(--mui-palette-grey-A700, #616161)"
+      },
+      "text": {
+        "primary": "var(--mui-palette-text-primary, rgba(0, 0, 0, 0.87))",
+        "secondary": "var(--mui-palette-text-secondary, rgba(0, 0, 0, 0.6))",
+        "disabled": "var(--mui-palette-text-disabled, rgba(0, 0, 0, 0.38))",
+        "icon": "var(--mui-palette-text-icon, rgba(255, 255, 255, 0.5))",
+        "primaryChannel": "var(--mui-palette-text-primaryChannel, 0 0 0)",
+        "secondaryChannel": "var(--mui-palette-text-secondaryChannel, 0 0 0)"
+      },
+      "divider": "var(--mui-palette-divider, rgba(0, 0, 0, 0.12))",
+      "background": {
+        "paper": "var(--mui-palette-background-paper, #fff)",
+        "default": "var(--mui-palette-background-default, #fafafa)",
+        "defaultChannel": "var(--mui-palette-background-defaultChannel, 250 250 250)",
+        "paperChannel": "var(--mui-palette-background-paperChannel, 255 255 255)"
+      },
+      "action": {
+        "active": "var(--mui-palette-action-active, rgba(0, 0, 0, 0.54))",
+        "hover": "var(--mui-palette-action-hover, rgba(0, 0, 0, 0.04))",
+        "hoverOpacity": "var(--mui-palette-action-hoverOpacity, 0.04)",
+        "selected": "var(--mui-palette-action-selected, rgba(0, 0, 0, 0.08))",
+        "selectedOpacity": "var(--mui-palette-action-selectedOpacity, 0.08)",
+        "disabled": "var(--mui-palette-action-disabled, rgba(0, 0, 0, 0.26))",
+        "disabledBackground": "var(--mui-palette-action-disabledBackground, rgba(0, 0, 0, 0.12))",
+        "disabledOpacity": "var(--mui-palette-action-disabledOpacity, 0.38)",
+        "focus": "var(--mui-palette-action-focus, rgba(0, 0, 0, 0.12))",
+        "focusOpacity": "var(--mui-palette-action-focusOpacity, 0.12)",
+        "activatedOpacity": "var(--mui-palette-action-activatedOpacity, 0.12)",
+        "activeChannel": "var(--mui-palette-action-activeChannel, 0 0 0)",
+        "selectedChannel": "var(--mui-palette-action-selectedChannel, 0 0 0)"
+      },
+      "Alert": {
+        "errorColor": "var(--mui-palette-Alert-errorColor, rgb(95, 33, 32))",
+        "infoColor": "var(--mui-palette-Alert-infoColor, rgb(1, 67, 97))",
+        "successColor": "var(--mui-palette-Alert-successColor, rgb(30, 70, 32))",
+        "warningColor": "var(--mui-palette-Alert-warningColor, rgb(102, 60, 0))",
+        "errorFilledBg": "var(--mui-palette-Alert-errorFilledBg, var(--mui-palette-error-main, #d32f2f))",
+        "infoFilledBg": "var(--mui-palette-Alert-infoFilledBg, var(--mui-palette-info-main, #0288d1))",
+        "successFilledBg": "var(--mui-palette-Alert-successFilledBg, var(--mui-palette-success-main, #2e7d32))",
+        "warningFilledBg": "var(--mui-palette-Alert-warningFilledBg, var(--mui-palette-warning-main, #ed6c02))",
+        "errorFilledColor": "var(--mui-palette-Alert-errorFilledColor, #fff)",
+        "infoFilledColor": "var(--mui-palette-Alert-infoFilledColor, #fff)",
+        "successFilledColor": "var(--mui-palette-Alert-successFilledColor, #fff)",
+        "warningFilledColor": "var(--mui-palette-Alert-warningFilledColor, #fff)",
+        "errorStandardBg": "var(--mui-palette-Alert-errorStandardBg, rgb(253, 237, 237))",
+        "infoStandardBg": "var(--mui-palette-Alert-infoStandardBg, rgb(229, 246, 253))",
+        "successStandardBg": "var(--mui-palette-Alert-successStandardBg, rgb(237, 247, 237))",
+        "warningStandardBg": "var(--mui-palette-Alert-warningStandardBg, rgb(255, 244, 229))",
+        "errorIconColor": "var(--mui-palette-Alert-errorIconColor, var(--mui-palette-error-main, #d32f2f))",
+        "infoIconColor": "var(--mui-palette-Alert-infoIconColor, var(--mui-palette-info-main, #0288d1))",
+        "successIconColor": "var(--mui-palette-Alert-successIconColor, var(--mui-palette-success-main, #2e7d32))",
+        "warningIconColor": "var(--mui-palette-Alert-warningIconColor, var(--mui-palette-warning-main, #ed6c02))"
+      },
+      "AppBar": {
+        "defaultBg": "var(--mui-palette-AppBar-defaultBg, var(--mui-palette-grey-100, #f5f5f5))",
+        "darkBg": "var(--mui-palette-AppBar-darkBg, var(--mui-palette-background-paper, #141821))",
+        "darkColor": "var(--mui-palette-AppBar-darkColor, var(--mui-palette-text-primary, #f5f5f5))"
+      },
+      "Avatar": {
+        "defaultBg": "var(--mui-palette-Avatar-defaultBg, var(--mui-palette-grey-400, #bdbdbd))"
+      },
+      "Button": {
+        "inheritContainedBg": "var(--mui-palette-Button-inheritContainedBg, var(--mui-palette-grey-300, #e0e0e0))",
+        "inheritContainedHoverBg": "var(--mui-palette-Button-inheritContainedHoverBg, var(--mui-palette-grey-A100, #f5f5f5))"
+      },
+      "Chip": {
+        "defaultBorder": "var(--mui-palette-Chip-defaultBorder, var(--mui-palette-grey-400, #bdbdbd))",
+        "defaultAvatarColor": "var(--mui-palette-Chip-defaultAvatarColor, var(--mui-palette-grey-700, #616161))",
+        "defaultIconColor": "var(--mui-palette-Chip-defaultIconColor, var(--mui-palette-grey-700, #616161))"
+      },
+      "FilledInput": {
+        "bg": "var(--mui-palette-FilledInput-bg, rgba(0, 0, 0, 0.06))",
+        "hoverBg": "var(--mui-palette-FilledInput-hoverBg, rgba(0, 0, 0, 0.09))",
+        "disabledBg": "var(--mui-palette-FilledInput-disabledBg, rgba(0, 0, 0, 0.12))"
+      },
+      "LinearProgress": {
+        "primaryBg": "var(--mui-palette-LinearProgress-primaryBg, rgb(170, 209, 217))",
+        "secondaryBg": "var(--mui-palette-LinearProgress-secondaryBg, rgb(158, 215, 209))",
+        "errorBg": "var(--mui-palette-LinearProgress-errorBg, rgb(238, 175, 175))",
+        "infoBg": "var(--mui-palette-LinearProgress-infoBg, rgb(158, 209, 237))",
+        "successBg": "var(--mui-palette-LinearProgress-successBg, rgb(175, 205, 177))",
+        "warningBg": "var(--mui-palette-LinearProgress-warningBg, rgb(248, 199, 158))"
+      },
+      "Skeleton": {
+        "bg": "var(--mui-palette-Skeleton-bg, rgba(var(--mui-palette-text-primaryChannel, undefined) / 0.11))"
+      },
+      "Slider": {
+        "primaryTrack": "var(--mui-palette-Slider-primaryTrack, rgb(170, 209, 217))",
+        "secondaryTrack": "var(--mui-palette-Slider-secondaryTrack, rgb(158, 215, 209))",
+        "errorTrack": "var(--mui-palette-Slider-errorTrack, rgb(238, 175, 175))",
+        "infoTrack": "var(--mui-palette-Slider-infoTrack, rgb(158, 209, 237))",
+        "successTrack": "var(--mui-palette-Slider-successTrack, rgb(175, 205, 177))",
+        "warningTrack": "var(--mui-palette-Slider-warningTrack, rgb(248, 199, 158))"
+      },
+      "SnackbarContent": {
+        "bg": "var(--mui-palette-SnackbarContent-bg, rgb(49, 49, 49))",
+        "color": "var(--mui-palette-SnackbarContent-color, #fff)"
+      },
+      "SpeedDialAction": {
+        "fabHoverBg": "var(--mui-palette-SpeedDialAction-fabHoverBg, rgb(216, 216, 216))"
+      },
+      "StepConnector": {
+        "border": "var(--mui-palette-StepConnector-border, var(--mui-palette-grey-400, #bdbdbd))"
+      },
+      "StepContent": {
+        "border": "var(--mui-palette-StepContent-border, var(--mui-palette-grey-400, #bdbdbd))"
+      },
+      "Switch": {
+        "defaultColor": "var(--mui-palette-Switch-defaultColor, var(--mui-palette-common-white, #fff))",
+        "defaultDisabledColor": "var(--mui-palette-Switch-defaultDisabledColor, var(--mui-palette-grey-100, #f5f5f5))",
+        "primaryDisabledColor": "var(--mui-palette-Switch-primaryDisabledColor, rgb(170, 209, 217))",
+        "secondaryDisabledColor": "var(--mui-palette-Switch-secondaryDisabledColor, rgb(158, 215, 209))",
+        "errorDisabledColor": "var(--mui-palette-Switch-errorDisabledColor, rgb(238, 175, 175))",
+        "infoDisabledColor": "var(--mui-palette-Switch-infoDisabledColor, rgb(158, 209, 237))",
+        "successDisabledColor": "var(--mui-palette-Switch-successDisabledColor, rgb(175, 205, 177))",
+        "warningDisabledColor": "var(--mui-palette-Switch-warningDisabledColor, rgb(248, 199, 158))"
+      },
+      "TableCell": {
+        "border": "var(--mui-palette-TableCell-border, rgba(224, 224, 224, 1))"
+      },
+      "Tooltip": {
+        "bg": "var(--mui-palette-Tooltip-bg, rgba(97, 97, 97, 0.92))"
+      },
+      "dividerChannel": "var(--mui-palette-dividerChannel, 0 0 0)"
+    },
+    "opacity": {
+      "inputPlaceholder": "var(--mui-opacity-inputPlaceholder, 0.42)",
+      "inputUnderline": "var(--mui-opacity-inputUnderline, 0.42)",
+      "switchTrackDisabled": "var(--mui-opacity-switchTrackDisabled, 0.12)",
+      "switchTrack": "var(--mui-opacity-switchTrack, 0.38)"
+    },
+    "overlays": [
+      "var(--mui-overlays-0, none)",
+      "var(--mui-overlays-1, linear-gradient(rgba(255 255 255 / 0.051), rgba(255 255 255 / 0.051)))",
+      "var(--mui-overlays-2, linear-gradient(rgba(255 255 255 / 0.069), rgba(255 255 255 / 0.069)))",
+      "var(--mui-overlays-3, linear-gradient(rgba(255 255 255 / 0.082), rgba(255 255 255 / 0.082)))",
+      "var(--mui-overlays-4, linear-gradient(rgba(255 255 255 / 0.092), rgba(255 255 255 / 0.092)))",
+      "var(--mui-overlays-5, linear-gradient(rgba(255 255 255 / 0.101), rgba(255 255 255 / 0.101)))",
+      "var(--mui-overlays-6, linear-gradient(rgba(255 255 255 / 0.108), rgba(255 255 255 / 0.108)))",
+      "var(--mui-overlays-7, linear-gradient(rgba(255 255 255 / 0.114), rgba(255 255 255 / 0.114)))",
+      "var(--mui-overlays-8, linear-gradient(rgba(255 255 255 / 0.119), rgba(255 255 255 / 0.119)))",
+      "var(--mui-overlays-9, linear-gradient(rgba(255 255 255 / 0.124), rgba(255 255 255 / 0.124)))",
+      "var(--mui-overlays-10, linear-gradient(rgba(255 255 255 / 0.128), rgba(255 255 255 / 0.128)))",
+      "var(--mui-overlays-11, linear-gradient(rgba(255 255 255 / 0.132), rgba(255 255 255 / 0.132)))",
+      "var(--mui-overlays-12, linear-gradient(rgba(255 255 255 / 0.135), rgba(255 255 255 / 0.135)))",
+      "var(--mui-overlays-13, linear-gradient(rgba(255 255 255 / 0.139), rgba(255 255 255 / 0.139)))",
+      "var(--mui-overlays-14, linear-gradient(rgba(255 255 255 / 0.142), rgba(255 255 255 / 0.142)))",
+      "var(--mui-overlays-15, linear-gradient(rgba(255 255 255 / 0.145), rgba(255 255 255 / 0.145)))",
+      "var(--mui-overlays-16, linear-gradient(rgba(255 255 255 / 0.147), rgba(255 255 255 / 0.147)))",
+      "var(--mui-overlays-17, linear-gradient(rgba(255 255 255 / 0.15), rgba(255 255 255 / 0.15)))",
+      "var(--mui-overlays-18, linear-gradient(rgba(255 255 255 / 0.152), rgba(255 255 255 / 0.152)))",
+      "var(--mui-overlays-19, linear-gradient(rgba(255 255 255 / 0.155), rgba(255 255 255 / 0.155)))",
+      "var(--mui-overlays-20, linear-gradient(rgba(255 255 255 / 0.157), rgba(255 255 255 / 0.157)))",
+      "var(--mui-overlays-21, linear-gradient(rgba(255 255 255 / 0.159), rgba(255 255 255 / 0.159)))",
+      "var(--mui-overlays-22, linear-gradient(rgba(255 255 255 / 0.161), rgba(255 255 255 / 0.161)))",
+      "var(--mui-overlays-23, linear-gradient(rgba(255 255 255 / 0.163), rgba(255 255 255 / 0.163)))",
+      "var(--mui-overlays-24, linear-gradient(rgba(255 255 255 / 0.165), rgba(255 255 255 / 0.165)))"
+    ]
+  },
+  "palette": {
+    "mode": "light",
+    "primary": {
+      "main": "#21869c",
+      "light": "rgb(77, 158, 175)",
+      "dark": "rgb(23, 93, 109)",
+      "contrastText": "#fff",
+      "mainChannel": "33 134 156",
+      "lightChannel": "77 158 175",
+      "darkChannel": "23 93 109",
+      "contrastTextChannel": "255 255 255"
+    },
+    "secondary": {
+      "main": "#009688",
+      "light": "rgb(51, 171, 159)",
+      "dark": "rgb(0, 105, 95)",
+      "contrastText": "#fff",
+      "mainChannel": "0 150 136",
+      "lightChannel": "51 171 159",
+      "darkChannel": "0 105 95",
+      "contrastTextChannel": "255 255 255"
+    },
+    "background": {
+      "default": "#fafafa",
+      "paper": "#fff",
+      "defaultChannel": "250 250 250",
+      "paperChannel": "255 255 255"
+    },
+    "common": {
+      "black": "#000",
+      "white": "#fff",
+      "background": "#fff",
+      "onBackground": "#000",
+      "backgroundChannel": "255 255 255",
+      "onBackgroundChannel": "0 0 0"
+    },
+    "error": {
+      "main": "#d32f2f",
+      "light": "#ef5350",
+      "dark": "#c62828",
+      "contrastText": "#fff",
+      "mainChannel": "211 47 47",
+      "lightChannel": "239 83 80",
+      "darkChannel": "198 40 40",
+      "contrastTextChannel": "255 255 255"
+    },
+    "warning": {
+      "main": "#ed6c02",
+      "light": "#ff9800",
+      "dark": "#e65100",
+      "contrastText": "#fff",
+      "mainChannel": "237 108 2",
+      "lightChannel": "255 152 0",
+      "darkChannel": "230 81 0",
+      "contrastTextChannel": "255 255 255"
+    },
+    "info": {
+      "main": "#0288d1",
+      "light": "#03a9f4",
+      "dark": "#01579b",
+      "contrastText": "#fff",
+      "mainChannel": "2 136 209",
+      "lightChannel": "3 169 244",
+      "darkChannel": "1 87 155",
+      "contrastTextChannel": "255 255 255"
+    },
+    "success": {
+      "main": "#2e7d32",
+      "light": "#4caf50",
+      "dark": "#1b5e20",
+      "contrastText": "#fff",
+      "mainChannel": "46 125 50",
+      "lightChannel": "76 175 80",
+      "darkChannel": "27 94 32",
+      "contrastTextChannel": "255 255 255"
+    },
+    "grey": {
+      "50": "#fafafa",
+      "100": "#f5f5f5",
+      "200": "#eeeeee",
+      "300": "#e0e0e0",
+      "400": "#bdbdbd",
+      "500": "#9e9e9e",
+      "600": "#757575",
+      "700": "#616161",
+      "800": "#424242",
+      "900": "#212121",
+      "A100": "#f5f5f5",
+      "A200": "#eeeeee",
+      "A400": "#bdbdbd",
+      "A700": "#616161"
+    },
+    "contrastThreshold": 3,
+    "tonalOffset": 0.2,
+    "text": {
+      "primary": "rgba(0, 0, 0, 0.87)",
+      "secondary": "rgba(0, 0, 0, 0.6)",
+      "disabled": "rgba(0, 0, 0, 0.38)",
+      "primaryChannel": "0 0 0",
+      "secondaryChannel": "0 0 0"
+    },
+    "divider": "rgba(0, 0, 0, 0.12)",
+    "action": {
+      "active": "rgba(0, 0, 0, 0.54)",
+      "hover": "rgba(0, 0, 0, 0.04)",
+      "hoverOpacity": 0.04,
+      "selected": "rgba(0, 0, 0, 0.08)",
+      "selectedOpacity": 0.08,
+      "disabled": "rgba(0, 0, 0, 0.26)",
+      "disabledBackground": "rgba(0, 0, 0, 0.12)",
+      "disabledOpacity": 0.38,
+      "focus": "rgba(0, 0, 0, 0.12)",
+      "focusOpacity": 0.12,
+      "activatedOpacity": 0.12,
+      "activeChannel": "0 0 0",
+      "selectedChannel": "0 0 0"
+    },
+    "Alert": {
+      "errorColor": "rgb(95, 33, 32)",
+      "infoColor": "rgb(1, 67, 97)",
+      "successColor": "rgb(30, 70, 32)",
+      "warningColor": "rgb(102, 60, 0)",
+      "errorFilledBg": "var(--mui-palette-error-main, #d32f2f)",
+      "infoFilledBg": "var(--mui-palette-info-main, #0288d1)",
+      "successFilledBg": "var(--mui-palette-success-main, #2e7d32)",
+      "warningFilledBg": "var(--mui-palette-warning-main, #ed6c02)",
+      "errorFilledColor": "#fff",
+      "infoFilledColor": "#fff",
+      "successFilledColor": "#fff",
+      "warningFilledColor": "#fff",
+      "errorStandardBg": "rgb(253, 237, 237)",
+      "infoStandardBg": "rgb(229, 246, 253)",
+      "successStandardBg": "rgb(237, 247, 237)",
+      "warningStandardBg": "rgb(255, 244, 229)",
+      "errorIconColor": "var(--mui-palette-error-main, #d32f2f)",
+      "infoIconColor": "var(--mui-palette-info-main, #0288d1)",
+      "successIconColor": "var(--mui-palette-success-main, #2e7d32)",
+      "warningIconColor": "var(--mui-palette-warning-main, #ed6c02)"
+    },
+    "AppBar": { "defaultBg": "var(--mui-palette-grey-100, #f5f5f5)" },
+    "Avatar": { "defaultBg": "var(--mui-palette-grey-400, #bdbdbd)" },
+    "Button": {
+      "inheritContainedBg": "var(--mui-palette-grey-300, #e0e0e0)",
+      "inheritContainedHoverBg": "var(--mui-palette-grey-A100, #f5f5f5)"
+    },
+    "Chip": {
+      "defaultBorder": "var(--mui-palette-grey-400, #bdbdbd)",
+      "defaultAvatarColor": "var(--mui-palette-grey-700, #616161)",
+      "defaultIconColor": "var(--mui-palette-grey-700, #616161)"
+    },
+    "FilledInput": {
+      "bg": "rgba(0, 0, 0, 0.06)",
+      "hoverBg": "rgba(0, 0, 0, 0.09)",
+      "disabledBg": "rgba(0, 0, 0, 0.12)"
+    },
+    "LinearProgress": {
+      "primaryBg": "rgb(170, 209, 217)",
+      "secondaryBg": "rgb(158, 215, 209)",
+      "errorBg": "rgb(238, 175, 175)",
+      "infoBg": "rgb(158, 209, 237)",
+      "successBg": "rgb(175, 205, 177)",
+      "warningBg": "rgb(248, 199, 158)"
+    },
+    "Skeleton": {
+      "bg": "rgba(var(--mui-palette-text-primaryChannel, undefined) / 0.11)"
+    },
+    "Slider": {
+      "primaryTrack": "rgb(170, 209, 217)",
+      "secondaryTrack": "rgb(158, 215, 209)",
+      "errorTrack": "rgb(238, 175, 175)",
+      "infoTrack": "rgb(158, 209, 237)",
+      "successTrack": "rgb(175, 205, 177)",
+      "warningTrack": "rgb(248, 199, 158)"
+    },
+    "SnackbarContent": { "bg": "rgb(49, 49, 49)", "color": "#fff" },
+    "SpeedDialAction": { "fabHoverBg": "rgb(216, 216, 216)" },
+    "StepConnector": { "border": "var(--mui-palette-grey-400, #bdbdbd)" },
+    "StepContent": { "border": "var(--mui-palette-grey-400, #bdbdbd)" },
+    "Switch": {
+      "defaultColor": "var(--mui-palette-common-white, #fff)",
+      "defaultDisabledColor": "var(--mui-palette-grey-100, #f5f5f5)",
+      "primaryDisabledColor": "rgb(170, 209, 217)",
+      "secondaryDisabledColor": "rgb(158, 215, 209)",
+      "errorDisabledColor": "rgb(238, 175, 175)",
+      "infoDisabledColor": "rgb(158, 209, 237)",
+      "successDisabledColor": "rgb(175, 205, 177)",
+      "warningDisabledColor": "rgb(248, 199, 158)"
+    },
+    "TableCell": { "border": "rgba(224, 224, 224, 1)" },
+    "Tooltip": { "bg": "rgba(97, 97, 97, 0.92)" },
+    "dividerChannel": "0 0 0"
+  },
+  "opacity": {
+    "inputPlaceholder": 0.42,
+    "inputUnderline": 0.42,
+    "switchTrackDisabled": 0.12,
+    "switchTrack": 0.38
+  },
+  "overlays": []
+}
