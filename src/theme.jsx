@@ -37,7 +37,7 @@ export const theme = createTheme({
         },
       }),
     },
-  
+
     MuiCard: {
       styleOverrides: {
         root: ({ theme }) => ({
@@ -66,40 +66,44 @@ export const theme = createTheme({
     MuiPaper: {
       styleOverrides: {
         root: ({ theme }) => ({
-          padding: 4,
+          padding: 1,
           margin: '1px 0',
           borderRadius: 5,
-
-          // 色は CSS 変数経由で（モードで自動切替）
-          // border: `1px solid ${theme.vars.palette.primary.main}`,
-
         }),
       },
     },
-    MuiBox:{
+    MuiBox: {
       styleOverrides: {
         root: ({ theme }) => ({
           padding: 10,
           margin: '10px 0',
         }),
       },
-
-    }
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          padding: "0 10px",
+          margin: '0',
+          fontSize: 'small',
+        }),
+      },
+    },
+    // typography: {
+    //   fontFamily: [
+    //     '-apple-system',
+    //     'BlinkMacSystemFont',
+    //     '"Segoe UI"',
+    //     'Roboto',
+    //     '"Helvetica Neue"',
+    //     'Arial',
+    //     'sans-serif',
+    //     '"Apple Color Emoji"',
+    //     '"Segoe UI Emoji"',
+    //     '"Segoe UI Symbol"',
+    //   ].join(','),
+    // },
   },
 
-  // typography: {
-  //   fontFamily: [
-  //     '-apple-system',
-  //     'BlinkMacSystemFont',
-  //     '"Segoe UI"',
-  //     'Roboto',
-  //     '"Helvetica Neue"',
-  //     'Arial',
-  //     'sans-serif',
-  //     '"Apple Color Emoji"',
-  //     '"Segoe UI Emoji"',
-  //     '"Segoe UI Symbol"',
-  //   ].join(','),
-  // },
 });
 

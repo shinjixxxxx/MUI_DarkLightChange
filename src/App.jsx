@@ -80,12 +80,12 @@ export default function App() {
       </Box>
 
       {/* Buttons セクション */}
-      <Paper sx={{ p: 3, mb: 3 }} className='border'>Paper
+      <Paper sx={{ p: 2, mb: 3 }} className='border'>Paper
         <Typography variant="h6" sx={{ mb: 2 }}>
           Buttons
         </Typography>
         <Card>
-        <Stack direction="row" spacing={2} useFlexGap flexWrap="wrap">
+        <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap">
           <Button variant="contained" color="secondary">Contained</Button>
           <Button variant="outlined" color="secondary">
             Outlined
@@ -127,7 +127,7 @@ export default function App() {
       </Paper>
 
       {/* Grid + Card セクション */}
-      <Paper className='border' sx={{ p: 3, mb: 3 }}>Paper
+      <Paper className='border' sx={{ p: 2,pb: 3, mb: 3 }}>Paper
         <Typography variant="h6" sx={{ mb: 2 }}>
           Grid & Cards
         </Typography>
@@ -157,7 +157,7 @@ export default function App() {
       </Paper>
 
       {/* フォーム セクション */}
-      <Paper className='border' sx={{ p: 3, mb: 3 }}>
+      <Paper className='border' sx={{ p: 2, mb: 3 }}>
         <Typography variant="h6" sx={{ mb: 2 }}>
           Form
         </Typography>
@@ -281,7 +281,7 @@ export default function App() {
       </Paper>
 
       {/* Box（汎用コンテナ）の例 */}
-      <Paper className='border' sx={{ p: 3 }}>
+      <Paper className='border' sx={{ p: 2 }}>
         <Typography variant="h6" sx={{ mb: 2 }}>
           Box（汎用コンテナ）
         </Typography>
