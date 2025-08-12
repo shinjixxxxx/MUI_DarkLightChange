@@ -86,11 +86,29 @@ export default function App() {
           Buttons
         </Typography>
         <Stack direction="row" spacing={2} useFlexGap flexWrap="wrap">
-          <Button variant="contained">Contained</Button>
+          <Button variant="contained" color="secondary">Contained</Button>
           <Button variant="outlined" color="secondary">
             Outlined
           </Button>
           <Button variant="text" color="secondary">
+            Text
+          </Button>
+          <Button variant="contained" disabled  color="secondary">
+            Disabled
+          </Button>
+          <Button variant="contained" size="small" color="secondary">
+            Small
+          </Button>
+          <Button variant="contained" size="large" color="secondary">
+            Large
+          </Button>
+        </Stack>
+        <Stack direction="row" spacing={2} useFlexGap flexWrap="wrap" sx={{mt:3}}>
+          <Button variant="contained">Contained</Button>
+          <Button variant="outlined">
+            Outlined
+          </Button>
+          <Button variant="text">
             Text
           </Button>
           <Button variant="contained" disabled>
