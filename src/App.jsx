@@ -78,13 +78,13 @@ export default function App() {
           {mode === 'dark' ? <LightModeIcon /> : <DarkModeIcon />}
         </IconButton>
       </Box>
-      <Paper>Paper</Paper>
 
       {/* Buttons セクション */}
-      <Paper sx={{ p: 3, mb: 3 }}>
+      <Paper sx={{ p: 3, mb: 3 }} className='border'>Paper
         <Typography variant="h6" sx={{ mb: 2 }}>
           Buttons
         </Typography>
+        <Card>
         <Stack direction="row" spacing={2} useFlexGap flexWrap="wrap">
           <Button variant="contained" color="secondary">Contained</Button>
           <Button variant="outlined" color="secondary">
@@ -103,7 +103,9 @@ export default function App() {
             Large
           </Button>
         </Stack>
-        <Stack direction="row" spacing={2} useFlexGap flexWrap="wrap" sx={{mt:3}}>
+        </Card>
+        <Card>
+        <Stack direction="row" spacing={2} useFlexGap flexWrap="wrap" >
           <Button variant="contained">Contained</Button>
           <Button variant="outlined">
             Outlined
@@ -121,10 +123,11 @@ export default function App() {
             Large
           </Button>
         </Stack>
+        </Card>
       </Paper>
 
       {/* Grid + Card セクション */}
-      <Paper sx={{ p: 3, mb: 3 }}>
+      <Paper className='border' sx={{ p: 3, mb: 3 }}>Paper
         <Typography variant="h6" sx={{ mb: 2 }}>
           Grid & Cards
         </Typography>
@@ -154,7 +157,7 @@ export default function App() {
       </Paper>
 
       {/* フォーム セクション */}
-      <Paper sx={{ p: 3, mb: 3 }}>
+      <Paper className='border' sx={{ p: 3, mb: 3 }}>
         <Typography variant="h6" sx={{ mb: 2 }}>
           Form
         </Typography>
@@ -278,15 +281,15 @@ export default function App() {
       </Paper>
 
       {/* Box（汎用コンテナ）の例 */}
-      <Paper sx={{ p: 3 }}>
+      <Paper className='border' sx={{ p: 3 }}>
         <Typography variant="h6" sx={{ mb: 2 }}>
           Box（汎用コンテナ）
         </Typography>
-        <Box
+        <Box className='border'
           sx={(theme) => ({
             p: 2,
             borderRadius: theme.shape.borderRadius,
-            border: `1px dashed ${theme.palette.divider}`,
+            // border: `1px dashed ${theme.palette.divider}`,
             display: 'flex',
             gap: 2,
             alignItems: 'center',
@@ -296,7 +299,7 @@ export default function App() {
           <Typography variant="body2">
             `sx` で柔軟にレイアウトを記述できます。
           </Typography>
-          <Button size="small" variant="contained" color="secondary">
+          <Button size="small" variant="contained" _color="secondary">
             Action
           </Button>
         </Box>

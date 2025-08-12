@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '@mui/material';
+import { Box , Paper , Card } from '@mui/material';
 
 const ThemeColorTester = () => {
   return (
@@ -10,7 +10,7 @@ const ThemeColorTester = () => {
           flexDirection: 'column',
         })}
       >
-        <Box
+        <Paper
           sx={{
             flex: 1,
             fontSize: 'small',
@@ -19,8 +19,8 @@ const ThemeColorTester = () => {
           }}
         >
           primary.main
-        </Box>
-        <Box
+        </Paper>
+        <Paper
           sx={{
             flex: 1,
             fontSize: 'small',
@@ -29,8 +29,8 @@ const ThemeColorTester = () => {
           }}
         >
           primary.light
-        </Box>
-        <Box
+        </Paper>
+        <Paper
           sx={{
             flex: 1,
             fontSize: 'small',
@@ -39,8 +39,8 @@ const ThemeColorTester = () => {
           }}
         >
           primary.dark
-        </Box>
-        <Box
+        </Paper>
+        <Paper
           sx={{
             flex: 1,
             fontSize: 'small',
@@ -49,8 +49,8 @@ const ThemeColorTester = () => {
           }}
         >
           secondary.main
-        </Box>
-        <Box
+        </Paper>
+        <Paper
           sx={{
             flex: 1,
             fontSize: 'small',
@@ -59,8 +59,8 @@ const ThemeColorTester = () => {
           }}
         >
           secondary.light
-        </Box>
-        <Box
+        </Paper>
+        <Paper
           sx={{
             flex: 1,
             fontSize: 'small',
@@ -69,7 +69,7 @@ const ThemeColorTester = () => {
           }}
         >
           secondary.dark
-        </Box>
+        </Paper>
       </Box>
     </>
   );
