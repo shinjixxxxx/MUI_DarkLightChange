@@ -1,7 +1,13 @@
 import React from 'react';
-import { Box , Paper , Card } from '@mui/material';
+import { Box, Paper, Card } from '@mui/material';
 
 const ThemeColorTester = () => {
+  const st = {
+    flex: 1,
+    fontSize: 'small',
+    color: 'primary.contrastText',
+    paddingLeft: "8px",
+  }
   return (
     <>
       <Box
@@ -12,60 +18,48 @@ const ThemeColorTester = () => {
       >
         <Paper
           sx={{
-            flex: 1,
-            fontSize: 'small',
+            ...st,
             bgcolor: 'primary.main',
-            color: 'primary.contrastText',
           }}
         >
           primary.main
         </Paper>
         <Paper
           sx={{
-            flex: 1,
-            fontSize: 'small',
+            ...st,
             bgcolor: 'primary.light',
-            color: 'primary.contrastText',
           }}
         >
           primary.light
         </Paper>
         <Paper
           sx={{
-            flex: 1,
-            fontSize: 'small',
+            ...st,
             bgcolor: 'primary.dark',
-            color: 'primary.contrastText',
           }}
         >
           primary.dark
         </Paper>
         <Paper
           sx={{
-            flex: 1,
-            fontSize: 'small',
+            ...st,
             bgcolor: 'secondary.main',
-            color: 'secondary.contrastText',
           }}
         >
           secondary.main
         </Paper>
         <Paper
           sx={{
-            flex: 1,
-            fontSize: 'small',
+            ...st,
             bgcolor: 'secondary.light',
-            color: 'secondary.contrastText',
           }}
         >
           secondary.light
         </Paper>
         <Paper
           sx={{
-            flex: 1,
-            fontSize: 'small',
+            ...st,
             bgcolor: 'secondary.dark',
-            color: 'secondary.contrastText',
           }}
         >
           secondary.dark
