@@ -255,6 +255,7 @@ export default function App() {
 
             <Grid item xs={12}>
               <Stack direction="row" spacing={2}>
+                
                 <Button type="submit" variant="contained">
                   送信
                 </Button>

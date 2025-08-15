@@ -80,15 +80,15 @@ export const theme = createTheme({
         }),
       },
     },
-    MuiButton: {
-      styleOverrides: {
-        root: ({ theme }) => ({
-          padding: "0 10px",
-          margin: '0',
-          fontSize: 'small',
-        }),
-      },
-    },
+    // MuiButton: {
+    //   styleOverrides: {
+    //     root: ({ theme }) => ({
+    //       padding: "0 10px",
+    //       margin: '0',
+    //       fontSize: 'small',
+    //     }),
+    //   },
+    // },
     // typography: {
     //   fontFamily: [
     //     '-apple-system',
